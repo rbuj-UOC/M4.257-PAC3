@@ -1,0 +1,162 @@
+.table-fluid {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 1.3rem;
+  border-top: 1px solid var(--primary-color);
+  font-weight: 700;
+  padding: 15px;
+}
+
+td,
+th {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  vertical-align: bottom;
+  text-align: left;
+}
+
+td {
+  color: var(--secondary-color);
+}
+
+th[scope="col"]:first-of-type {
+  text-align: left;
+}
+
+th[scope="col"] {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+th[scope="row"] {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+thead {
+  tr {
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+  }
+}
+
+tbody {
+  tr:nth-child(odd) {
+    background-color: var(--quaternary-color);
+
+    a {
+      color: var(--secondary-color);
+      border-bottom: 1px dotted var(--secondary-color);
+    }
+
+    a:hover {
+      color: var(--primary-color);
+      border-bottom: 1px solid var(--primary-color);
+    }
+  }
+}
+
+tfoot {
+  border-bottom: 1px solid var(--primary-color);
+
+  td {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+}
+
+.aims-img {
+  border: solid 1px var(--quaternary-color);
+  font-size: small;
+  float: right;
+  width: 152px;
+  margin-left: 12px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: 252px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+
+    @media (min-width: 768px) {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    margin: 0.5rem auto;
+    width: 75%;
+  }
+}
+
+#animacio svg {
+  fill: currentColor;
+  max-height: 48px;
+  margin: 0 auto;
+  height: auto !important;
+  width: auto !important;
+  display: block;
+  max-width: 100%;
+}
+
+.bars-loader .morphing-bar {
+  transform-origin: center;
+  animation: morphingBar var(--loader-animation-speed) ease-in-out infinite;
+}
+
+.bars-loader .morphing-bar-left {
+  animation-delay: calc(var(--loader-animation-speed) / 2.5);
+}
+
+.bars-loader .morphing-bar-center {
+  animation-delay: calc(var(--loader-animation-speed) / 5);
+}
+
+.bars-loader .morphing-bar-right {
+  animation-delay: calc(var(--loader-animation-speed) / 7.5);
+}
+
+@keyframes morphingBar {
+
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0.5);
+  }
+}
+
+.goat {
+  max-width: 50%;
+  margin: auto;
+
+  @media (min-width: 768px) {
+    max-width: 25%;
+  }
+}

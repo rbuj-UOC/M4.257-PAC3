@@ -1,0 +1,67 @@
+body.home {
+  color: var(--primary-color);
+  text-align: center;
+  background-color: var(--ternary-color);
+  max-width: 800px;
+  margin: 0 auto;
+
+  header {
+    background: transparent;
+  }
+
+  main {
+    p {
+      font-size: 1.1rem;
+
+      @media (min-width: 1200px) {
+        font-size: 2.3rem;
+      }
+    }
+  }
+
+  h1 {
+    font-family: "Protest Revolution", sans-serif;
+    line-height: 1;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+
+    @media (min-width: 1200px) {
+      font-size: 7rem;
+    }
+  }
+
+  a {
+    color: inherit;
+    border: none;
+  }
+
+  nav {
+    ul {
+      padding-top: 1rem;
+      padding-left: 0;
+      margin-left: 0;
+
+      li {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .home-logo {
+    width: 500px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    background-color: transparent;
+    font-weight: 500;
+    text-align: center;
+
+    a:hover {
+      color: var(--accent-color);
+    }
+  }
+}

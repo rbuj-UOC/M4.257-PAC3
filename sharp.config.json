@@ -1,0 +1,8 @@
+{
+    "jpeg": {
+      "quality": 85
+    },
+    "png": {
+      "palette": true
+    }
+  }

@@ -1,0 +1,126 @@
+.grid-blog {
+  article {
+    margin-bottom: 1rem;
+    background: var(--light-color);
+    border: 1px solid var(--primary-color);
+
+    h1,
+    h2 {
+      text-align: start;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    article {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    article:first-child {
+      grid-column: 1 / span 2;
+    }
+  }
+}
+
+.card-content {
+  padding: 15px;
+
+  h2 {
+    margin-bottom: .5rem;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  h2,
+  h4 {
+    a {
+      color: var(--ternary-color);
+      border-bottom: none;
+    }
+  }
+
+  h2,
+  h4 {
+    a:hover {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.meta-data {
+  margin-bottom: 2px;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.card-image {
+  position: relative;
+
+  a {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: .5rem;
+    background-color: var(--quaternary-color);
+    border-bottom: none;
+    color: var(--light-color);
+    font-size: 0.8rem;
+  }
+
+  a:hover {
+    background: var(--accent-color);
+  }
+}
+
+.img-fluid img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 4rem;
+  list-style-type: none;
+
+  li {
+    a {
+      display: inline-block;
+      padding: .5rem;
+      border: 1px solid var(--primary-color);
+      background-color: var(--light-color);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a.current {
+      background-color: var(--accent-color);
+      border: 1px solid var(--accent-color);
+      color: var(--light-color);
+    }
+  }
+}
+
+a.more {
+  display: inline-block;
+  margin-top: 0;
+}
+
+a.more::after {
+  content: '\003E';
+  padding-left: .5rem;
+}
