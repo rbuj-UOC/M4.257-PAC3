@@ -254,13 +254,13 @@ footer {
   }
 
   a {
-    color: var(--secondary-color);
     border: none;
+    color: var(--primary-color);
   }
 
   a:hover {
     border: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
   }
 
   ul {
