@@ -26,10 +26,6 @@ th {
   text-align: left;
 }
 
-td {
-  color: var(--secondary-color);
-}
-
 th[scope="col"]:first-of-type {
   text-align: left;
 }
@@ -56,14 +52,24 @@ tbody {
   tr:nth-child(odd) {
     background-color: var(--quaternary-color);
 
+    td {
+      color: var(--primary-color);
+    }
+
     a {
-      color: var(--secondary-color);
-      border-bottom: 1px dotted var(--secondary-color);
+      color: var(--primary-color);
+      border-bottom: 1px dotted var(--primary-color);
     }
 
     a:hover {
-      color: var(--primary-color);
-      border-bottom: 1px solid var(--primary-color);
+      color: var(--secondary-color);
+      border-bottom: 1px solid var(--secondary-color);
+    }
+  }
+
+  tr:nth-child(even) {
+    td {
+      color: var(--quaternary-color);
     }
   }
 }
