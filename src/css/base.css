@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   color: var(--ternary-color);
   line-height: 1.5;
