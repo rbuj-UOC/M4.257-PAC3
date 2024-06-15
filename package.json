@@ -33,7 +33,7 @@
     "sharp": "^0.31.1"
   },
   "dependencies": {
-    "photoswipe": "^5.4.3",
+    "photoswipe": "^5.4.4",
     "waait": "^1.0.5"
   }
 }
