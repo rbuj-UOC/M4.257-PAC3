@@ -134,6 +134,7 @@ main {
 header {
   height: auto;
   padding: 15px;
+  background-color: var(--ternary-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
