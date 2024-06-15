@@ -2,5 +2,6 @@
   "extends": "@parcel/config-default",
   "optimizers": {
     "*.{jpg,jpeg,png,webp}": []
-  }
+  },
+  "reporters":  ["...", "parcel-reporter-static-files-copy"]
 }

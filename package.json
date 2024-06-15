@@ -14,6 +14,20 @@
   "author": "Robert Buj <rbuj@uoc.edu>",
   "license": "CC0-1.0",
   "description": "",
+  "staticFiles": [
+    {
+      "staticPath": "src/robots.txt",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "staticPath": "src/humans.txt",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  ],
   "@parcel/transformer-css": {
     "drafts": {
       "nesting": true
@@ -22,6 +36,8 @@
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "parcel": "^2.12.0",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "postcss": "^8.4.38",
     "postcss-custom-properties": "^13.3.10",
     "postcss-import": "^16.1.0",
