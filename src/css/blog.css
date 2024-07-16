@@ -35,7 +35,7 @@
   padding: 15px;
 
   h2 {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     margin-top: 0;
     font-weight: 700;
     font-size: 1.75rem;
@@ -71,7 +71,7 @@
     position: absolute;
     top: 8px;
     left: 8px;
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: var(--quaternary-color);
     border-bottom: none;
     color: var(--light-color);
@@ -100,7 +100,7 @@
   li {
     a {
       display: inline-block;
-      padding: .5rem;
+      padding: 0.5rem;
       border: 1px solid var(--primary-color);
       background-color: var(--light-color);
       text-decoration: none;
@@ -122,5 +122,5 @@ a.more {
 
 a.more::after {
   content: '\003E';
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }

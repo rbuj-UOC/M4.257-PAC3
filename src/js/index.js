@@ -1,10 +1,10 @@
 // index.js
-import wait from "waait";
+import wait from 'waait';
 
 async function go() {
-  console.log("Going!");
+  console.log('Going!');
   await wait(200);
-  console.log("Ending!");
+  console.log('Ending!');
 }
 
 go();

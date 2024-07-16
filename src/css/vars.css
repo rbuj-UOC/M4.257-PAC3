@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #FFC94A;
-  --secondary-color: #C08B5C;
+  --primary-color: #ffc94a;
+  --secondary-color: #c08b5c;
   --ternary-color: #795458;
-  --quaternary-color: #453F78;
-  --accent-color: #FF914D;
+  --quaternary-color: #453f78;
+  --accent-color: #ff914d;
   --light-color: #fafbfd;
   --bg-color: antiquewhite;
   --loader-animation-speed: 0.75s;

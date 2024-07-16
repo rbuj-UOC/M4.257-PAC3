@@ -2,5 +2,7 @@
     "cSpell.language": "ca,en",
     "editor.wordWrapColumn": 80,
     "editor.tabSize": 2,
-    "editor.autoIndent": "full"
+    "editor.autoIndent": "full",
+    "emmet.triggerExpansionOnTab": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

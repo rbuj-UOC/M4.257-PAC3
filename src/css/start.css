@@ -26,16 +26,16 @@ th {
   text-align: left;
 }
 
-th[scope="col"]:first-of-type {
+th[scope='col']:first-of-type {
   text-align: left;
 }
 
-th[scope="col"] {
+th[scope='col'] {
   font-weight: normal;
   font-size: 1rem;
 }
 
-th[scope="row"] {
+th[scope='row'] {
   font-weight: bold;
   font-size: 1.4rem;
   text-align: left;
@@ -147,7 +147,6 @@ tfoot {
 }
 
 @keyframes morphingBar {
-
   0%,
   100% {
     transform: scaleY(1);
