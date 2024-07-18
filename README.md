@@ -5,6 +5,7 @@ Boilerplate for parcel
 # Nodejs
 
 Establir les opcions predeterminades quan es crea un nou fitxer [package.json](./package.json):
+
 ```
 npm config set init-author-email "rbuj@uoc.edu"
 npm config set init-author-name "Robert Buj"
@@ -18,16 +19,19 @@ npm init --yes
 ```
 
 ## ESLint
+
 ```
 npm init @eslint/config@latest
 ```
 
 ## Prettier
+
 ```
 npm install --save-dev prettier
 ```
 
 Afegir les opcions de formatació al fitxer [.prettierrc.json](.prettierrc.json)
+
 ```json
 {
   "trailingComma": "none",
@@ -65,11 +69,9 @@ npm install --save-dev eslint-config-prettier
 Editar el fitxer [eslint.config.mjs](./eslint.config.mjs)
 
 ```js
-import eslintConfigPrettier from "eslint-config-prettier";
+import eslintConfigPrettier from 'eslint-config-prettier';
 
-export default [
-  eslintConfigPrettier,
-];
+export default [eslintConfigPrettier];
 ```
 
 ## Parcel
@@ -113,6 +115,7 @@ Modificar la secció `scripts` del fitxer [package.json](./package.json)
 4. Seleccionar l'opció `Prettier`
 
 ## EditorConfig
+
 1. Clicar on es vol crear el fitxer `.editorconfig` amb el botó dret del ratoli a l'explorador
 2. Seleccionar Generate .editorconfig
 
@@ -143,3 +146,31 @@ Modificar la secció `scripts` del fitxer [package.json](./package.json)
 | F5      | Iniciar la depuració      |
 | Fn F2   | Refactor: canviar el nom  |
 | Fn F3   | Cercar: cercar el següent |
+
+## Execució
+
+1. Clicar al botó `Run and Debug` del plafó lateral, `⌘ ⇧ D` en macOS
+2. Clicar a l'enllaç `create a launch.json` file
+3. Seleccionar `Web App (Chrome)`
+4. Afegir la línia
+
+```
+"preLaunchTask": "npm: start",
+```
+
+5. Canviar el port
+
+```
+"url": "http://localhost:1234",
+```
+
+Executar la tasca `npm start` al rerefons
+
+1. Accedir a la línia d'ordres, `⌘ ⇧ P` en macOS
+2. `Tasks: Configure Task`
+3. Seleccionar `npm: start`
+4. Afegir la línia
+
+```
+"isBackground": true
+```
